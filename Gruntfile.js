@@ -5,7 +5,7 @@ module.exports = function(grunt){
       all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js', 'server.js']
     },
     watch: {
-      files: ['Gruntfile.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'test/**/*.js', 'server.js'],
       tasks: ['jshint', 'webdriver']
     },
     webdriver: {
