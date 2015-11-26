@@ -3,7 +3,7 @@ var expect = chai.expect;
 
 describe('homepage', function() {
 
-  it('hello worlds', function() {
+  it('hello worlds', function(done) {
     browser
       .url('http://localhost:3000')
       .getText('body', function(err, text) {

@@ -1,11 +1,12 @@
 module.exports = function(grunt){
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     jshint: {
       all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
     },
     watch: {
       files: ['Gruntfile.js', 'test/**/*.js'],
-      tasks: ['jshint']
+      tasks: ['jshint', 'webdriver']
     },
     webdriver: {
       test: {
