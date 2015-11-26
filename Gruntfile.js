@@ -1,21 +1,15 @@
 module.exports = function(grunt){
-
   grunt.initConfig({
     jshint: {
-      all: ['Gruntfile.js', 'src/**/*.js', 'spec/**/*.js']
+      all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
     },
     watch: {
-      files: ['Gruntfile.js'],
+      files: ['Gruntfile.js', 'test/**/*.js'],
       tasks: ['jshint']
     },
     webdriver: {
-      helloWorld: {
-        tests: 'test/**/*'
-      },
-      options: {
-        desiredCapabilities: {
-          browserName: 'chrome'
-        }
+      test: {
+        configFile: './test/wdio.conf.js'
       }
     },
   });
