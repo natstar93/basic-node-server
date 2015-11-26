@@ -17,5 +17,8 @@
     "mocha": "^2.3.4",
     "selenium-standalone": "^4.7.2",
     "webdriverio": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
   }
 }
