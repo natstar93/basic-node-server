@@ -23,4 +23,13 @@ describe('other page', function() {
       })
       .call(done);
   });
+
+  it('gets title', function(done) {
+    browser
+      .url('http://localhost:3000/otherpage')
+      .title(function(err, res) {
+        expect(res.value).to.equal('title here');
+      })
+      .call(done);
+  });
 });

@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/otherpage', function(request, response) {
-  response.send('<h1>other page</h1>');
+  response.send('<title>title here</title><h1>other page</h1>');
 });
 
 server.listen(3000, function() {
